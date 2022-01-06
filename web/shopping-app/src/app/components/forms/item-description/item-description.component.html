@@ -1,4 +1,3 @@
-<app-header></app-header>
 
 <div class="wrapper">
     <div class="row">
@@ -17,7 +16,9 @@
         <p><b>Price :  &#x20B9; {{details[1]['price']}}</b></p>
         <p><b>Rating : </b>{{details[1]['rating']}}</p>
         <p><b>Rating : </b>257 ratings <b> Reviews : </b>500 reviews</p>
-        
+        <p *ngIf = "details[1]['price']>=500"><b>Deliver : Free Deliver</b></p>
+        <p *ngIf="details[1]['price']<500"><b>Deliver : 50 Rupeees</b></p>
+        <button type="button" class="btn btn-success">ADD</button>
       </div>
     </div>
     </div>

@@ -1,1 +1,47 @@
-<p>add-item works!</p>
+<div class="mt-2">
+<div class="card pb-3 ms-4" style="width: 40rem;">
+    <form class="ms-4 mt-3"#userName="ngForm" (ngSubmit)="onClickSubmit(userName.value)"> 
+        <label>  
+            <h3><b>Item:  </b></h3>
+        </label>  
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <label><h5>Item Name: </h5></label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" name="itemName" placeholder="" ngModel><br><br>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+                <label><h5>Item Image: </h5></label>
+            </div>
+            <div class="col-md-4">
+                <input type="file" name="itemImg" placeholder="" ngModel><br><br>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+                <label><h5>Item Description: </h5></label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" name="itemDescription" placeholder="" ngModel><br><br>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+                <label><h5>Item Price: </h5></label>
+            </div>
+            <div class="col-md-4">
+                <input type="number" name="itemPrice" placeholder="" ngModel><br><br>
+            </div>
+         </div>
+         <br>
+        <div class="col-md-7 ms-5 d-flex flex-row-reverse bd-highlight">
+        <input class="btn btn-success" type="submit" value="ADD"> 
+         </div>
+    </form>
+</div>
+</div>

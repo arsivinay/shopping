@@ -11,5 +11,8 @@ export class AddItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onClickSubmit(result:any) {
+    alert(result.username);
+    console.log("You have entered : " + result.username); 
+ }
 }
